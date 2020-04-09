@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<fieldset>
+    <legend>
+        Restaurant Billing
+    </legend>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    Customer Name :
+                    <input type="text" id="customer_name" placeholder="Full name" name="Customer Name" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    Customer Phone:
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    Food Item:
+                    <input type="text" id="food_item" placeholder="item name" name="Item Name" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        <div class="col-md-6">
+            <div class="form-group">
+                Unit Price:
+                <input type="text" id="price" placeholder="00.00" pattern="00.00" name="price" class="form-control" />
+            </div>
+        </div>
+            </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    Quantity:
+                    <input type="text" id="quantity" placeholder="0" pattern="0" name="quantity" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    Total:
+                    <input type="text" id="total" placeholder="00.00" name="total" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <br />
+        <button type="button" onclick="alert("Order placed!!!")">Submit</button>
+
+    </div>
+</fieldset>
+
